@@ -17,13 +17,13 @@ char *cap_string(char *str)
 			str[0] = str[0] - 32;
 		}
 
-		if (str[index - 1] == ' ' || str[index - 1] == '\t' ||
-		    str[index - 1] == '\n' || str[index - 1] == ',' ||
-		    str[index - 1] == ';' || str[index - 1] == '.' ||
-		    str[index - 1] == '!' || str[index - 1] == '?' ||
-		    str[index - 1] == '"' || str[index - 1] == '(' ||
-		    str[index - 1] == ')' || str[index - 1] == '{' ||
-		    str[index - 1] == '}' || str[index - 1] == '-')
+		if (str[index] == ' ' || str[index] == '\t' ||
+		    str[index] == '\n' || str[index] == ',' ||
+		    str[index] == ';' || str[index] == '.' ||
+		    str[index] == '!' || str[index] == '?' ||
+		    str[index] == '"' || str[index] == '(' ||
+		    str[index] == ')' || str[index] == '{' ||
+		    str[index] == '}' || str[index] == '-')
 		{
 			if (str[index + 1] >= 97 && str[index + 1] <= 122)
 			{
