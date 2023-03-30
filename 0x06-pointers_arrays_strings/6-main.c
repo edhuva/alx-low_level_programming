@@ -6,6 +6,7 @@
  *
  * Return: Always 0.
  */
+
 int main(void)
 {
 	char str[] = "Expect the best. Prepare for the worst. Capitalize on \
@@ -16,5 +17,6 @@ int main(void)
 	ptr = cap_string(str);
 	printf("%s", ptr);
 	printf("%s", str);
-	return (0);
+
+return (0);
 }
