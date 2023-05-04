@@ -13,6 +13,7 @@ listint_t *find_listint_loop(listint_t *head)
 
 	if (!head)
 		return (NULL);
+
 	while (sloww && fasst && fast->next)
 	{
 		fasst = fasst->next->next;
