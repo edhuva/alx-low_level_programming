@@ -24,6 +24,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	wrt = write(STDOUT_FILENO, bufff, t_);
 
 	free(bufff);
-	close(file_dd);
+	close(file_d);
 	return (wrt);
 }
