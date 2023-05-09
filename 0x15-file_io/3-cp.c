@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 
-	bufff = create_buffer(argv[2]);
+	bufff = create_bufff(argv[2]);
 	from_ = open(argv[1], O_RDONLY);
 	rd = read(from_, bufff, 1024);
 	to_ = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
@@ -84,8 +84,8 @@ int main(int argc, char *argv[])
 
 	} while (rd > 0);
 
-	free(buff);
-	close_file(from_);
-	close_file(to_);
+	free(bufff);
+	close_f(from_);
+	close_f(to_);
 	return (0);
 }
